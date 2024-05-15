@@ -7,7 +7,6 @@ using VSSThreeSyncfusionBlazor.Client.Pages;
 using VSSThreeSyncfusionBlazor.Components;
 using VSSThreeSyncfusionBlazor.Components.Account;
 using VSSThreeSyncfusionBlazor.Data;
-using Microsoft.AspNetCore.Authentication.Google;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,6 +46,12 @@ builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.Requ
     .AddDefaultTokenProviders();
 
 builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
+
+builder.Services.AddMsalAuthentication(options =>
+{
+    builder.Configuration.Bind("AzureAd", options.ProviderOptions.Authentication);
+    options.ProviderOptions.DefaultAccessTokenScopes.Add("api://914fce2b-4523-477b-ae74-e22d6cf8d9eb/VSSThreeScope");
+});
 
 var app = builder.Build();
 
