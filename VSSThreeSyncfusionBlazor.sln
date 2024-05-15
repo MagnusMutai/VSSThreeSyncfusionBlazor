@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSSThreeSyncfusionBlazor", "VSSThreeSyncfusionBlazor\VSSThreeSyncfusionBlazor\VSSThreeSyncfusionBlazor.csproj", "{E3510125-DCC2-4BF6-9B06-074DDF3B1F6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSSThreeSyncfusionBlazor.Client", "VSSThreeSyncfusionBlazor\VSSThreeSyncfusionBlazor.Client\VSSThreeSyncfusionBlazor.Client.csproj", "{370FAE1A-3EA5-4442-BEA9-34D7813D2437}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3510125-DCC2-4BF6-9B06-074DDF3B1F6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3510125-DCC2-4BF6-9B06-074DDF3B1F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3510125-DCC2-4BF6-9B06-074DDF3B1F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3510125-DCC2-4BF6-9B06-074DDF3B1F6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{370FAE1A-3EA5-4442-BEA9-34D7813D2437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{370FAE1A-3EA5-4442-BEA9-34D7813D2437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{370FAE1A-3EA5-4442-BEA9-34D7813D2437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{370FAE1A-3EA5-4442-BEA9-34D7813D2437}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D04A1B3-AE0C-461F-A59D-D76D82041D5D}
+	EndGlobalSection
+EndGlobal
