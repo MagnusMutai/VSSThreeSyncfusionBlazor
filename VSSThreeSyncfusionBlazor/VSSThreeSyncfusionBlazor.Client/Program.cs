@@ -1,17 +1,20 @@
-﻿using VSSThreeSyncfusionBlazor.Client.Data;
+using VSSThreeSyncfusionBlazor.Client.Data;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Syncfusion.Blazor;
+
 using System.Globalization;
 using Microsoft.JSInterop;
 using VSSThreeSyncfusionBlazor.Client;
+using Syncfusion.Blazor;
 using VSSThreeSyncfusionBlazor.Client;
+using Syncfusion.Blazor;
 
 //Register Syncfusion license https://help.syncfusion.com/common/essential-studio/licensing/how-to-generate
 //Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
-
 builder.Services.AddSyncfusionBlazor();
+
+
             builder.Services.AddSingleton(typeof(ISyncfusionStringLocalizer), typeof(SyncfusionLocalizer));
 
             // Set the default culture of the application
