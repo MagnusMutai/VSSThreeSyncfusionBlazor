@@ -73,6 +73,11 @@ else
     app.UseHsts();
 }
 
+app.UseCookiePolicy(new CookiePolicyOptions()
+{
+    MinimumSameSitePolicy = SameSiteMode.None
+});
+
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
