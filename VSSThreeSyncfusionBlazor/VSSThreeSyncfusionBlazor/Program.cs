@@ -1,20 +1,22 @@
-﻿using VSSThreeSyncfusionBlazor.Client.Data;
+using VSSThreeSyncfusionBlazor.Client.Data;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Syncfusion.Blazor;
+
 using VSSThreeSyncfusionBlazor.Client.Pages;
 using VSSThreeSyncfusionBlazor.Components;
 using VSSThreeSyncfusionBlazor.Components.Account;
 using VSSThreeSyncfusionBlazor.Data;
+using Syncfusion.Blazor;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSyncfusionBlazor();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
-builder.Services.AddSyncfusionBlazor();
+
             builder.Services.AddSingleton<PowerPointService>();
             builder.Services.AddSingleton<ExcelService>();
 

@@ -1,0 +1,50 @@
+@page "/syncfusioncodegenerator"
+@rendermode InteractiveAuto
+@using VSSThreeSyncfusionBlazor.Client.Model
+<h3>Syncfusioncodegenerator</h3>
+
+@code{
+
+    public IEnumerable<FootballPlayer> Players { get; set; }
+
+    public void LoadPlayers()
+    {
+        FootballPlayer player1 = new FootballPlayer()
+            {
+                Id = 1,
+                FirstName = "Jorge",
+                LastName = "Luigi",
+                NickName = "Jorginho",
+                Team = "Arsenal",
+                Age = 32,
+                IsInjured = false
+
+            };
+
+        FootballPlayer player2 = new FootballPlayer()
+            {
+                Id = 2,
+                FirstName = "Reiss",
+                LastName = "Nelson",
+                Team = "Arsenal",
+                Age = 23,
+                IsInjured = true
+            };
+
+
+        FootballPlayer player3 = new FootballPlayer()
+            {
+                Id = 3,
+                FirstName = "Ollie",
+                LastName = "Watkins",
+                Team = "AstonVilla",
+                Age = 23,
+                IsInjured = false
+
+            };
+
+        Players = new List<FootballPlayer>() { player1, player2, player3 };
+
+    }
+
+}
