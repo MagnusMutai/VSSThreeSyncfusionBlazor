@@ -10,6 +10,9 @@ using VSSThreeSyncfusionBlazor.Data;
 using Syncfusion.Blazor;
 
 var builder = WebApplication.CreateBuilder(args);
+
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MzI5NjE4MEAzMjM1MmUzMDJlMzBWV05VVmY3Q3hscFl5Q0h2WHdyZ0Y5NWhzTXNDaGx3eDkweFdQeEsycGlVPQ==");
+
 builder.Services.AddSyncfusionBlazor();
 
 // Add services to the container.
