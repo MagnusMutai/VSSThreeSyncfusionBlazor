@@ -3,6 +3,18 @@
 
 <SfAccordion>
     <AccordionItems>
+        @foreach (AccordionData Item in AccordionItems)
+        {
+            <AccordionItem>
+                <HeaderTemplate>
+                    <div>@Item.EmployeeName</div>
+                </HeaderTemplate>
 
+                <ContentTemplate>
+                    <div><b>Employee ID:</b>@Item.EmployeeId</div>
+                    <div><b>Designation:</b>@Item.Designation</div>
+                </ContentTemplate>
+            </AccordionItem>
+        }
     </AccordionItems>
 </SfAccordion>
