@@ -2,7 +2,6 @@ using VSSThreeSyncfusionBlazor.Client.Data;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-
 using VSSThreeSyncfusionBlazor.Client.Pages;
 using VSSThreeSyncfusionBlazor.Components;
 using VSSThreeSyncfusionBlazor.Components.Account;
@@ -11,7 +10,7 @@ using Syncfusion.Blazor;
 
 var builder = WebApplication.CreateBuilder(args);
 
-Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MzI5Njc2N0AzMjM1MmUzMDJlMzBWV05VVmY3Q3hscFl5Q0h2WHdyZ0Y5NWhzTXNDaGx3eDkweFdQeEsycGlVPQ==");
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MzMzOTkyMkAzMjM1MmUzMDJlMzBWQmEwcXlNN2tkSVpoRE1WRlMvZVI0cWVFSy82OEt2bGx6emxPOS85bGRjPQ==");
 
 builder.Services.AddSyncfusionBlazor();
 
